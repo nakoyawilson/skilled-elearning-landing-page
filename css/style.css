@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&display=swap");
+
+:root {
+  --font: "Plus Jakarta Sans", sans-serif;
+  --medium-blue: hsl(234, 25%, 52%);
+  --dark-blue: hsl(233, 54%, 16%);
+  --grey: hsl(232, 10%, 56%);
+  --dark-pink: hsl(341, 92%, 62%);
+  --light-pink: hsl(341, 100%, 83%);
+  --white: hsl(0, 0%, 100%);
+  --gradient1: linear-gradient(180deg, hsl(13, 100%, 64%), hsl(322, 87%, 55%));
+  --gradient2: linear-gradient(180deg, hsl(237, 100%, 64%), hsl(322, 87%, 55%));
+  --gradient3: linear-gradient(180deg, hsl(0, 0%, 100%), hsl(234, 100%, 97%));
+  --shadow: rgba(6, 22, 141, 0.0442381);
+}
+
+/* CSS Reset */
+
+* {
+  box-sizing: border-box;
+}
+
+/* General Styles */
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--font);
+  background: var(--gradient3);
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.container {
+  width: min(91.46667%, 343px);
+}
+
+.logo {
+  width: 89px;
+}
+
+.btn {
+  border-radius: 28px;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+  color: var(--white);
+}
+
+.paragraph {
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  color: var(--grey);
+}
+
+/* Header */
+.header {
+  margin: 1.6rem auto 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.6rem;
+}
+
+.header .btn {
+  background: var(--dark-blue);
+  padding: 0.9rem 2.4rem 1.1rem;
+}
+
+/* Main */
+.main {
+  margin: 3.8rem auto 0;
+  padding-bottom: 8rem;
+}
+
+.main-heading {
+  font-weight: 800;
+  font-size: 4rem;
+  line-height: 5rem;
+  color: var(--dark-blue);
+}
+
+.main > .paragraph {
+  margin-top: 2.6rem;
+}
+
+.main .btn {
+  background: var(--gradient1);
+  margin-top: 2.4rem;
+  padding: 1.5rem 3.7rem 1.5rem 3.8rem;
+}
+
+.subheading {
+  background: var(--gradient1);
+  color: var(--white);
+  font-weight: 800;
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  border-radius: 10px;
+  padding: 2.4rem 2.9rem 3.2rem 2.8rem;
+  position: relative;
+  margin-top: 41.3rem;
+}
+
+.subheading::before {
+  content: "";
+  width: 100%;
+  height: 301px;
+  background-image: url("../assets/image-hero-mobile@2x.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  position: absolute;
+  top: -367px;
+  left: 0;
+  right: 0;
+  margin-inline: auto;
+}
+
+.section-heading {
+  font-weight: 800;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  color: var(--dark-blue);
+}
+
+.course {
+  background: var(--white);
+  padding: 5.6rem 2.9rem 3.2rem 2.8rem;
+  box-shadow: 0px 25px 50px var(--shadow);
+  border-radius: 10px;
+  margin-top: 4rem;
+  position: relative;
+}
+
+.course::before {
+  content: "";
+  width: 56px;
+  height: 56px;
+  position: absolute;
+  left: 2.8rem;
+  top: -2.4rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.course:nth-of-type(1)::before {
+  background-image: url("../assets/icon-animation.svg");
+}
+
+.course:nth-of-type(2)::before {
+  background-image: url("../assets/icon-design.svg");
+}
+
+.course:nth-of-type(3)::before {
+  background-image: url("../assets/icon-photography.svg");
+}
+
+.course:nth-of-type(4)::before {
+  background-image: url("../assets/icon-crypto.svg");
+}
+
+.course:nth-of-type(5)::before {
+  background-image: url("../assets/icon-business.svg");
+}
+
+.course .paragraph {
+  margin-top: 1.6rem;
+}
+
+.cta-link {
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  color: var(--dark-pink);
+  margin-top: 2.4rem;
+}
+
+/* Footer */
+.footer {
+  padding: 3.6rem 0;
+  background: var(--dark-blue);
+}
+
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.6rem;
+  margin-inline: auto;
+}
+
+.footer .btn {
+  background: var(--gradient2);
+  padding: 0.9rem 2.4rem 1.1rem;
+}
