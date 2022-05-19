@@ -29,6 +29,7 @@ html {
 body {
   font-family: var(--font);
   background: var(--gradient3);
+  font-size: 1.6rem;
 }
 
 a {
@@ -138,6 +139,9 @@ a {
   border-radius: 10px;
   margin-top: 4rem;
   position: relative;
+  min-height: 259px;
+  display: flex;
+  flex-direction: column;
 }
 
 .course::before {
@@ -174,6 +178,7 @@ a {
 
 .course .paragraph {
   margin-top: 1.6rem;
+  margin-bottom: auto;
 }
 
 .cta-link {
@@ -202,4 +207,141 @@ a {
 .footer .btn {
   background: var(--gradient2);
   padding: 0.9rem 2.4rem 1.1rem;
+}
+
+/* Media Queries */
+@media screen and (min-width: 376px) {
+  /* General Styles */
+  .container {
+    width: min(89.71354%, 689px);
+  }
+
+  /* Header */
+  .header {
+    margin: 2.4rem auto 0;
+  }
+
+  /* Main */
+  .main {
+    margin: 9.9rem auto 0;
+    padding-bottom: 8.6rem;
+  }
+
+  .main-heading {
+    width: min(100%, 32.6rem);
+  }
+
+  .main > .paragraph {
+    margin-top: 2.5rem;
+    width: min(100%, 39.8rem);
+  }
+
+  .grid {
+    margin-top: 21rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1.1rem;
+    row-gap: 5.6rem;
+  }
+
+  .subheading {
+    border-radius: 10px;
+    padding: 5.6rem 2.1rem 3.2rem 3.2rem;
+    margin-top: 0;
+  }
+
+  .subheading::before {
+    content: none;
+  }
+
+  .course {
+    padding: 5.6rem 2.1rem 3.2rem 3.2rem;
+    margin-top: 0;
+  }
+
+  .course::before {
+    left: 3.2rem;
+  }
+}
+
+@media (min-width: 769px) {
+  /* General Styles */
+  .container {
+    width: min(100%, 1109.21px);
+  }
+
+  .logo {
+    width: 111.18px;
+  }
+
+  .btn {
+    font-size: 1.8rem;
+  }
+
+  .paragraph {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+  }
+
+  /* Header */
+  .header .btn {
+    padding: 1.4rem 3.1rem 1.4rem 3.2rem;
+  }
+
+  /* Main */
+  .main {
+    margin: 17.2rem auto 0;
+    padding-bottom: 14rem;
+  }
+
+  .main-heading {
+    font-size: 5.6rem;
+    line-height: 7.1rem;
+    width: min(100%, 45.7rem);
+  }
+
+  .main > .paragraph {
+    margin-top: 2.9rem;
+    width: min(100%, 44.5rem);
+  }
+
+  .main .btn {
+    border: 31.5px;
+  }
+
+  .grid {
+    margin-top: 25rem;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 3rem;
+    row-gap: 8rem;
+  }
+
+  .subheading {
+    border-radius: 15px;
+    padding: 6.4rem 3.2rem 3.2rem;
+  }
+
+  .course {
+    padding: 6.4rem 3.2rem 4rem 3.2rem;
+    border-radius: 15px;
+    min-height: 322px;
+  }
+
+  .section-heading {
+    font-size: 2.4rem;
+    line-height: 3rem;
+  }
+
+  .course .paragraph {
+    margin-top: 2.4rem;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 3.2rem 0;
+  }
+
+  .footer .btn {
+    padding: 1.4rem 3.1rem 1.4rem 3.2rem;
+  }
 }
